@@ -1,0 +1,26 @@
+{
+  "name": "ycj007.github.io",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ycj007/ycj007.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ycj007/ycj007.github.io/issues"
+  },
+  "homepage": "https://github.com/ycj007/ycj007.github.io#readme",
+  "description": "",
+  "devDependencies": {
+    "@vuepress/bundler-vite": "^2.0.0-rc.20",
+    "@vuepress/theme-default": "^2.0.0-rc.84",
+    "sass-embedded": "^1.85.1",
+    "vuepress": "^2.0.0-rc.20"
+  }
+}
