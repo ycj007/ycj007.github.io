@@ -17,16 +17,14 @@
   },
   "homepage": "https://github.com/ycj007/ycj007.github.io#readme",
   "description": "",
- 
- "devDependencies": {
-  "@vuepress/bundler-vite": "^2.0.0-rc.7",  
-  "@vuepress/cli": "^2.0.0-rc.7",           
-  "@vuepress/theme-default": "^2.0.0-rc.7",
-  "sass-embedded": "^1.85.1",
-  "vuepress": "^2.0.0-rc.8"                 
-} ,
-"optionalDependencies": {
-  "@rollup/rollup-linux-x64-gnu": "*"
-}
-
+  "devDependencies": {
+    "@vuepress/bundler-vite": "^2.0.0-rc.7",
+    "@vuepress/cli": "^2.0.0-rc.7",
+    "@vuepress/theme-default": "^2.0.0-rc.7",
+    "sass-embedded": "^1.85.1",
+    "vuepress": "^2.0.0-rc.8"
+  },
+  "optionalDependencies": {
+    "@rollup/rollup-linux-x64-gnu": "*"
+  }
 }
