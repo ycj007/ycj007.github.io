@@ -99,7 +99,8 @@ export default defineUserConfig({
               { text: 'Vue官网', link: 'https://cn.vuejs.org/', target: '_blank' },
               { text: 'TypeScript官网', link: 'https://ts.nodejs.cn/', target: '_blank' },
               { text: 'VuePress v2官网', link: 'https://v2.vuepress.vuejs.org/zh/', target: '_blank' },
-            
+              { text: '牧涯前端学习笔记', link: 'https://muyacode.github.io/FrontEndLearnNotes/', target: '_blank' },
+          
        
             ]
           },{
