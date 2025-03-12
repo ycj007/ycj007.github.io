@@ -84,14 +84,43 @@ export default defineUserConfig({
       {
         text: '首页',
         link: '/'
-      },
-       
-      {
+      },{
         text: '数据结构与算法',
         link: '/data-structure/',
-      }
+      },
+      {
+        text: '工具',
+        children: [
+          {
+            text: '前端工具',
+            children: [
+              { text: 'MDN官网', link: 'https://developer.mozilla.org', target: '_blank' },
+              { text: 'JavaScript.info官网', link: 'https://javascript.info/', target: '_blank' },
+              { text: 'Vue官网', link: 'https://cn.vuejs.org/', target: '_blank' },
+              { text: 'TypeScript官网', link: 'https://ts.nodejs.cn/', target: '_blank' },
+              { text: 'VuePress v2官网', link: 'https://v2.vuepress.vuejs.org/zh/', target: '_blank' },
+            
+       
+            ]
+          },{
+            text: '实用工具',
+            children: [
+              { text: '百度脑图', link: 'https://naotu.baidu.com/', target: '_blank' },
+            ]
+          }
+        ]
+      },
+      
     ],
     sidebar: {
+      '/tools/frontend-tools/': [
+        {
+          text: '前端工具',
+          children: [
+            '/tools/frontend-tools/',
+          ],
+        },
+      ],
       '/data-structure/': [
         {
           text: '数据结构与算法',
