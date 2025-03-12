@@ -4,7 +4,9 @@ title: 排序算法
 date: 2023-07-16 10:36:23
 permalink: /data-structure/sorting-algorithms/
 description: 页面的描述
+comments: true
 ---
+
 # 2.排序算法
 
 以下将详细介绍常见排序算法（冒泡排序、选择排序、插入排序、快速排序、归并排序、堆排序）在 Java、Python、Go 和 JavaScript 中的实现，同时进行算法分析以及空间复杂度、时间复杂度和排序稳定性的对比。
@@ -17,6 +19,8 @@ description: 页面的描述
 - **空间复杂度**：$O(1)$，只需要常数级的额外空间。
 - **稳定性**：稳定排序算法。
 
+::: tabs#bubble-sort
+@tab Java
 #### Java 实现
 ```java
 public class BubbleSort {
@@ -47,7 +51,7 @@ public class BubbleSort {
     }
 }
 ```
-
+@tab Python
 #### Python 实现
 ```python
 def bubble_sort(arr):
@@ -65,7 +69,7 @@ def bubble_sort(arr):
 arr = [64, 34, 25, 12, 22, 11, 90]
 print(bubble_sort(arr))
 ```
-
+@tab Go
 #### Go 实现
 ```go
 package main
@@ -94,8 +98,9 @@ func main() {
     fmt.Println(arr)
 }
 ```
-
+@tab JavaScript
 #### JavaScript 实现
+
 ```javascript
 function bubbleSort(arr) {
     let n = arr.length;
@@ -117,6 +122,7 @@ function bubbleSort(arr) {
 let arr = [64, 34, 25, 12, 22, 11, 90];
 console.log(bubbleSort(arr));
 ```
+:::
 
 ### 2. 选择排序（Selection Sort）
 
@@ -125,7 +131,8 @@ console.log(bubbleSort(arr));
 - **时间复杂度**：无论最好、最坏还是平均情况，时间复杂度都是 $O(n^2)$。
 - **空间复杂度**：$O(1)$，只需要常数级的额外空间。
 - **稳定性**：不稳定排序算法。
-
+::: tabs#selection-sort
+@tab Java
 #### Java 实现
 ```java
 public class SelectionSort {
@@ -153,7 +160,8 @@ public class SelectionSort {
     }
 }
 ```
-
+@tab Python
+ 
 #### Python 实现
 ```python
 def selection_sort(arr):
@@ -169,7 +177,8 @@ def selection_sort(arr):
 arr = [64, 25, 12, 22, 11]
 print(selection_sort(arr))
 ```
-
+@tab Go
+ 
 #### Go 实现
 ```go
 package main
@@ -195,8 +204,11 @@ func main() {
     fmt.Println(arr)
 }
 ```
-
+@tab JavaScript
+ 
 #### JavaScript 实现
+ 
+
 ```javascript
 function selectionSort(arr) {
     let n = arr.length;
@@ -215,7 +227,7 @@ function selectionSort(arr) {
 let arr = [64, 25, 12, 22, 11];
 console.log(selectionSort(arr));
 ```
-
+:::
 ### 3. 插入排序（Insertion Sort）
 
 #### 算法分析
@@ -224,6 +236,8 @@ console.log(selectionSort(arr));
 - **空间复杂度**：$O(1)$，只需要常数级的额外空间。
 - **稳定性**：稳定排序算法。
 
+::: tabs#insertion-sort
+@tab Java
 #### Java 实现
 ```java
 public class InsertionSort {
@@ -250,6 +264,7 @@ public class InsertionSort {
 }
 ```
 
+@tab Python
 #### Python 实现
 ```python
 def insertion_sort(arr):
@@ -266,6 +281,7 @@ arr = [12, 11, 13, 5, 6]
 print(insertion_sort(arr))
 ```
 
+@tab Go
 #### Go 实现
 ```go
 package main
@@ -292,7 +308,9 @@ func main() {
 }
 ```
 
+@tab JavaScript
 #### JavaScript 实现
+ 
 ```javascript
 function insertionSort(arr) {
     let n = arr.length;
@@ -311,7 +329,7 @@ function insertionSort(arr) {
 let arr = [12, 11, 13, 5, 6];
 console.log(insertionSort(arr));
 ```
-
+:::
 ### 4. 快速排序（Quick Sort）
 
 #### 算法分析
@@ -320,6 +338,8 @@ console.log(insertionSort(arr));
 - **空间复杂度**：平均情况为 $O(log n)$，最坏情况为 $O(n)$。
 - **稳定性**：不稳定排序算法。
 
+::: tabs#quick-sort
+@tab Java
 #### Java 实现
 ```java
 public class QuickSort {
@@ -359,6 +379,7 @@ public class QuickSort {
 }
 ```
 
+@tab Python
 #### Python 实现
 ```python
 def quick_sort(arr):
@@ -374,6 +395,7 @@ arr = [10, 7, 8, 9, 1, 5]
 print(quick_sort(arr))
 ```
 
+@tab Go
 #### Go 实现
 ```go
 package main
@@ -408,7 +430,9 @@ func main() {
 }
 ```
 
+@tab JavaScript
 #### JavaScript 实现
+
 ```javascript
 function quickSort(arr) {
     if (arr.length <= 1) {
@@ -433,7 +457,7 @@ function quickSort(arr) {
 let arr = [10, 7, 8, 9, 1, 5];
 console.log(quickSort(arr));
 ```
-
+:::
 ### 5. 归并排序（Merge Sort）
 
 #### 算法分析
@@ -442,6 +466,8 @@ console.log(quickSort(arr));
 - **空间复杂度**：$O(n)$，需要额外的空间来合并数组。
 - **稳定性**：稳定排序算法。
 
+::: tabs#merge-sort
+@tab Java
 #### Java 实现
 ```java
 public class MergeSort {
@@ -505,6 +531,7 @@ public class MergeSort {
 }
 ```
 
+@tab Python
 #### Python 实现
 ```python
 def merge_sort(arr):
@@ -533,6 +560,7 @@ arr = [12, 11, 13, 5, 6, 7]
 print(merge_sort(arr))
 ```
 
+@tab Go
 #### Go 实现
 ```go
 package main
@@ -573,7 +601,9 @@ func main() {
 }
 ```
 
+@tab JavaScript
 #### JavaScript 实现
+
 ```javascript
 function mergeSort(arr) {
     if (arr.length <= 1) {
@@ -604,7 +634,7 @@ function merge(left, right) {
 let arr = [12, 11, 13, 5, 6, 7];
 console.log(mergeSort(arr));
 ```
-
+:::
 ### 6. 堆排序（Heap Sort）
 
 #### 算法分析
@@ -613,6 +643,8 @@ console.log(mergeSort(arr));
 - **空间复杂度**：$O(1)$，只需要常数级的额外空间。
 - **稳定性**：不稳定排序算法。
 
+::: tabs#heap-sort
+@tab Java
 #### Java 实现
 ```java
 public class HeapSort {
@@ -667,6 +699,7 @@ public class HeapSort {
 }
 ```
 
+@tab Python
 #### Python 实现
 ```python
 def heap_sort(arr):
@@ -702,6 +735,7 @@ arr = [12, 11, 13, 5, 6, 7]
 print(heap_sort(arr))
 ```
 
+@tab Go
 #### Go 实现
 ```go
 package main
@@ -749,6 +783,7 @@ func main() {
 }
 ```
 
+@tab JavaScript
 #### JavaScript 实现
 ```javascript
 function heapSort(arr) {
@@ -789,3 +824,10 @@ function heapSort(arr) {
 
 let arr = [12, 11, 13, 5, 6, 7];
 console.log
+```
+:::
+
+<CommentService />
+
+
+ 
