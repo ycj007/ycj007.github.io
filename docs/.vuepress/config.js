@@ -97,6 +97,7 @@ export default defineUserConfig({
               { text: 'MDN官网', link: 'https://developer.mozilla.org', target: '_blank' },
               { text: 'JavaScript.info官网', link: 'https://javascript.info/', target: '_blank' },
               { text: 'Vue官网', link: 'https://cn.vuejs.org/', target: '_blank' },
+              { text: 'Electron官网', link: 'https://www.electronjs.org/zh/docs/latest', target: '_blank' },
               { text: 'TypeScript官网', link: 'https://ts.nodejs.cn/', target: '_blank' },
               { text: 'VuePress v2官网', link: 'https://v2.vuepress.vuejs.org/zh/', target: '_blank' },
               { text: '牧涯前端学习笔记', link: 'https://muyacode.github.io/FrontEndLearnNotes/', target: '_blank' },
