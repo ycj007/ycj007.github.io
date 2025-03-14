@@ -112,7 +112,17 @@ export default defineUserConfig({
           }
         ]
       },
-      
+      {
+        text: '音视频',
+        link: '/audio-video/',
+        children: [
+          {
+            text: 'RTMP优化实践',
+            link: 'https://xhunmon.github.io/VABlog/RTMP/6-optimize.html',
+            target: '_blank'
+          }
+        ]
+      },
     ],
     sidebar: {
       '/tools/frontend-tools/': [
