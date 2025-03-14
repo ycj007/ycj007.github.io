@@ -1,0 +1,1 @@
+import{_ as t,e as o,g as a,r as n,o as l}from"./app-odqBxlyh.js";const s={};function r(c,_){const e=n("Catalog");return l(),o("div",null,[a(e)])}const m=t(s,[["render",r],["__file","index.html.vue"]]),p=JSON.parse('{"path":"/tools/","title":"Tools","lang":"en-US","frontmatter":{"title":"Tools"},"headers":[],"git":{},"filePathRelative":null}');export{m as comp,p as data};
