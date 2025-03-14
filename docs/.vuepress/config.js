@@ -120,6 +120,11 @@ export default defineUserConfig({
             text: 'RTMP优化实践',
             link: 'https://xhunmon.github.io/VABlog/RTMP/6-optimize.html',
             target: '_blank'
+          },
+          {
+            text: '即时通讯网技术文章',
+            link: 'http://www.52im.net/thread-228-1-1.html',
+            target: '_blank'
           }
         ]
       },
